@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>|Portfolio|</title>
-    <link rel="stylesheet" href="">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="scroll-auto bg-black text-white relative">
+<body class="scroll-auto bg-neutral-800 text-white relative">
+
     <!-- Header Section -->
-     <div class="d-flex pt-8 pb-32">
+     <div class="flex py-10 px-32 items-center justify-between w-full rounded-xl">
         <div class="name">
-            <a href=""><h3>KUNAL SAHU</h3></a>
+            <a href="#" class="no-underline text-shadow-xs"><h3 class="text-cyan-500 px-3 font-serif text-3xl font-bold">KUNAL SAHU</h3></a>
         </div>
-       <div class="navbar">
+       <div>
         <nav>
-            <ul>
+            <ul class="flex items-center mr-5 gap-6">
                 <a href="#"><li>Home</li></a>
                  <a href="#about"><li>About</li></a>
                 <a href="#skill">
@@ -35,14 +45,14 @@
 
      <!-- About Me Section -->
 
-     <div id="hero">
-        <h2 id="about">About Me</h2>
-       <div class="aboutMe">
-        <div class="profile">
-            <img src="./image/profile.jpg" alt="profile">
+     <div class="mt-16">
+        <h2 id="about" class="text-center text-3xl text-cyan-300 underline pt-0">About Me</h2>
+       <div class="aboutMe flex items-center justify-between mt-10 p-28">
+        <div class="w-1/2 pl-20">
+            <img class="w-96 max-h-96 rounded-xl hover:shadow-red-900" src="./image/profile.jpg" alt="profile">
         </div>
-        <div class="about">
-            <h3>Hii, I'm Kunal Sahu , I am Front End Developer. I Completed My B.Tech from SRGI, Jhansi. Currently, I am doing
+        <div class="about mt-12 w-1/2 w-1/2 ml-16">
+            <h3 class="text-xl leading-loose py-0 px-5">Hii, I'm Kunal Sahu , I am Front End Developer. I Completed My B.Tech from SRGI, Jhansi. Currently, I am doing
                 internship in Java Full Stack From Qspider Sotware and training Institute from Noida.</h3>
         </div>
        </div>
@@ -50,40 +60,40 @@
 
      <!-- Skill Section -->
 
-    <div id="hero">
-        <h2 id="skill">My Skill</h2>
+    <div>
+        <h2 id="skill" class="text-center text-3xl text-cyan-300 underline pt-24">My Skill</h2>
         <div class="skill">
             <div class="skills">
                 <div class="html skilll">
-                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-html5 hover:text-orange-600"></i>
                 </div>
                 <div class="css skilll">
-                    <i class="fa-brands fa-css"></i>
+                    <i class="fa-brands fa-css hover:text-blue-800"></i>
                 </div>
                 <div class="js skilll">
-                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-js hover:text-yellow-600"></i>
                 </div>
             </div>
             <div class="skills">
                 <div class="java skilll">
-                    <i class="fa-brands fa-java"></i>
+                    <i class="fa-brands fa-java hover:text-red-500"></i>
                 </div>
                 <div class="database skilll">
-                    <i class="fa-solid fa-database"></i>
+                    <i class="fa-solid fa-database hover:text-blue-600"></i>
                 </div>
                 <div class="github skilll">
-                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-github hover:text-gray-900"></i>
                 </div>
             </div>
             <div class="skills">
                 <div class="react skilll">
-                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-react hover:text-cyan-400"></i>
                 </div>
                 <div class="dsa skilll">
-                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-python hover:text-green-600"></i>
                 </div>
                 <div class="bootstrap skilll">
-                    <i class="fa-brands fa-bootstrap"></i>
+                    <i class="fa-brands fa-bootstrap hover:text-violet-600"></i>
                 </div>
             </div>
         </div>
@@ -91,16 +101,16 @@
         <!-- project section -->
 
         <div id="project">
-            <h2 id="hero">My Project</h2>
-            <div class="projects">
-                <div class="project">
-                    <div class="img">
+            <h2 class="text-center text-3xl text-cyan-300 underline pt-24 mb-10">My Project</h2>
+            <div class="flex items-center justify-evenly">
+                <div class="project w-1/4 shadow-cyan-300 rounded-xl relative h-72 cursor-pointer">
+                    <div class="w-full h-fit m-5">
                         <a href="#p">
                             <img src="./image/portfolio.avif" alt="portfolio">
                         </a>
                     </div>
-                        <div class="description">
-                            <h4>Portfolio</h4>
+                        <div class=" description hidden absolute basis-7 h-0 bg-amber-100 p-5 text-black">
+                            <h4 class="text-4xl text-center text-orange-500">Portfolio</h4>
                            <div class="descr">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus omnis accusamus quibusdam consequatur cum vero
                                 fugiat voluptas esse fugit placeat reprehenderit suscipit distinctio, et aliquid dignissimos, error mollitia
@@ -109,28 +119,28 @@
                            </div>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="img">
+                <div class="project w-1/4 shadow-cyan-300 rounded-xl relative h-72 cursor-pointer">
+                    <div class="w-full h-fit m-5">
                        <a href="#e">
                         <img src="./image/portfolio.avif" alt="e-commerce">
                     </a>
                 </div>
-                        <div class="description">
-                            <h4>E-Commerce</h4>
+                        <div class=" description hidden absolute basis-7 h-0 bg-amber-100 p-5 text-black"">
+                            <h4 class="text-4xl text-center text-orange-500">E-Commerce</h4>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus omnis accusamus quibusdam consequatur cum vero
                                 fugiat voluptas esse fugit placeat reprehenderit suscipit distinctio, et aliquid dignissimos, error mollitia
                                 eveniet nisi sed maxime unde. Quos voluptate, nemo quod facere, nostrum neque hic amet laborum molestiae modi
                                 eaque voluptatem ipsa asperiores fugiat?</p>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="img">
+                <div class="project w-1/4 shadow-cyan-300 rounded-xl relative h-72 cursor-pointer">
+                    <div class="w-full h-fit m-5">
                         <a href="#t">
                             <img src="./image/portfolio.avif" alt="todo">
                         </a>
                     </div>
-                    <div class="description">
-                        <h4>Todo</h4>
+                    <div class="description hidden absolute basis-7 h-0 bg-amber-100 p-5 text-black"">
+                        <h4 class="text-4xl text-center text-orange-500">Todo</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus omnis accusamus quibusdam consequatur cum vero
                             fugiat voluptas esse fugit placeat reprehenderit suscipit distinctio, et aliquid dignissimos, error mollitia
                             eveniet nisi sed maxime unde. Quos voluptate, nemo quod facere, nostrum neque hic amet laborum molestiae modi
@@ -143,11 +153,11 @@
         <!-- contact section -->
 
         <div id="contact">
-            <h2 id="hero">My Contact </h2>
-            <div class="contact">
-                <p><a href="https://api.whatsapp.com/send?phone=8076215837"><i class="fa-brands fa-whatsapp"></i></a> : +91-8076215837</p>
-                <p><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a> : kunalsahu3131@gmail.com</p>
-                <p>Social : <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <h2 class="text-center text-3xl text-cyan-300 underline pt-24">My Contact </h2>
+            <div class="p-5 my-5 mx-48">
+                <p class="text-2xl"><a href="https://api.whatsapp.com/send?phone=8076215837"><i class="fa-brands fa-whatsapp"></i></a> : +91-8076215837</p>
+                <p class="text-2xl"><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a> : kunalsahu3131@gmail.com</p>
+                <p class="text-xl">Social : <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
                 <a href="https://github.com/KunalSahu2023"><i class="fa-brands fa-github"></i></a></i>
             <a href="https://www.linkedin.com/in/kunal-sahu-56990122b/"><i class="fa-brands fa-linkedin"></i></a></p>
             </div>

@@ -1,0 +1,82 @@
+
+body{
+    font-family: 'Crimson Pro', serif;
+}
+
+nav ul a li{
+    list-style: none;
+}
+nav ul a{
+    text-decoration: none;
+    color:white;
+    font-size: 22px;
+    position: relative;
+    cursor: pointer;
+}
+nav ul a::after{
+    content: '';
+    position: absolute;
+    background-color: aqua;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transition: width 0.3s ease-out;
+}
+nav ul a:hover{
+    color: aqua;
+}
+nav ul a:hover::after{
+    width: 100%;
+} */
+
+  /* About Me Section */
+
+.aboutMe .about {
+    margin-top: 50px;
+    width: 30%;
+}
+
+.aboutMe .about h3 {
+    font-size: 22px;
+    line-height: 3;
+    padding: 0 20px;
+}
+
+
+/* Skill Section */
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    width: 25%;
+    line-height: 3;
+}
+
+.skills i {
+    font-size: 80px;
+    padding: 20px 150px;
+    cursor: pointer;
+}
+
+.skilll {
+    height: 180px;
+    margin: 20px;
+}
+
+.fa-brands {
+    margin-top: 35px;
+}
+
+/* Project Section */
+
+.project:hover .description {
+    top: 10px;
+    height: 100%;
+    display: block;
+}
+
+/* Contact Section */
