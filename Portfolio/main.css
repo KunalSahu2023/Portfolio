@@ -7,3 +7,103 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav ul a li {
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    position: relative;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+nav ul a::after {
+    content: '';
+    position: absolute;
+    background-color: cyan;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transition: width 0.3s ease-out;
+}
+
+nav ul a:hover {
+    color: cyan;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+*/
+
+/* About Me Section */
+.lines::after {
+    content: '';
+    position: absolute;
+    left: 48%;
+    top: 75px;
+    width: 46px;
+    height: 3px;
+    background-color: cyan;
+}
+
+.aboutMe .about h3 {
+    font-size: 22px;
+    line-height: 3;
+    padding: 0 20px;
+}
+
+
+/* Skill Section */
+
+.skills {
+    width: 23%;
+    margin-top: 10px;
+    margin-right: 36px;
+}
+
+.skills i {
+    font-size: 60px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.fa-brands {
+    margin-top: 35px;
+}
+
+.skill {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 28px;
+    box-shadow: 0px 1px 5px gray;
+    cursor: pointer;
+}
+
+.skill:hover {
+    /* scale: 1.1; */
+    transition: 0.5s ease-in;
+}
+
+/* Project Section */
+
+.project:hover .description {
+    top: 20px;
+    height: 100%;
+    display: block;
+    transition: 0.3s ease-in;
+}
+
+.description {
+    width: 300px;
+    height: 10px;
+    background-color: gray;
+}
+
+/* Contact Section */
