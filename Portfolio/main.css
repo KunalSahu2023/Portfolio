@@ -84,6 +84,12 @@ nav ul a:hover::after {
     margin-bottom: 28px;
     box-shadow: 0px 1px 5px gray;
     cursor: pointer;
+
+}
+
+.skill:hover {
+    scale: 1.1;
+    transition: 0.5s ease-in;
 }
 
 .skill:hover {
@@ -93,17 +99,17 @@ nav ul a:hover::after {
 
 /* Project Section */
 
-.project:hover .description {
-    top: 20px;
-    height: 100%;
-    display: block;
-    transition: 0.3s ease-in;
-}
-
-.description {
-    width: 300px;
-    height: 10px;
-    background-color: gray;
-}
 
 /* Contact Section */
+
+.social a i{
+    font-size: 22px;
+    font-weight: 800;
+    color: black;
+}
+.social a{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
